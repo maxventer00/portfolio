@@ -30,11 +30,10 @@ export default function MobileDrawer({ setDrawerOpen }) {
           setDrawerOpen(true);
         }}
         backgroundColor="transparent"
-        variant="ghost"
         className="navbarMobile"
         float="right"
       >
-        <HamburgerIcon w={8} h={8} />
+        <HamburgerIcon w={8} h={8} outline={0} />
       </Button>
 
       <Drawer
