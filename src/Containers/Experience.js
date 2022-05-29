@@ -1,5 +1,5 @@
 import { Box, Text, UnorderedList, ListItem } from "@chakra-ui/react";
-import { Fade } from "react-reveal";
+import { Fade, Slide } from "react-reveal";
 import TextBeerExp from "../Components/Experience/TextBeerExp";
 import BrewensteinExp from "../Components/Experience/BrewensteinExp";
 import Navbar from "../Components/Navbar/Navbar";
@@ -21,25 +21,27 @@ export default function Experience() {
         backgroundColor="white"
         paddingBottom={1}
       >
-        <Text
-          fontSize={[25, 25, 32]}
-          color="#BBB0FF"
-          marginLeft={[1, 2, 2]}
-          letterSpacing={4}
-          fontWeight={500}
-        >
-          My Experience
-        </Text>
-        <Text
-          fontSize={[25, 25, 32]}
-          color="#BBB0FF"
-          marginLeft={[1, 2, 2]}
-          letterSpacing={4}
-          marginBottom={25}
-          fontWeight={500}
-        >
-          (so far...)
-        </Text>
+        <Slide left>
+          <Text
+            fontSize={[25, 25, 32]}
+            color="#BBB0FF"
+            marginLeft={[1, 2, 2]}
+            letterSpacing={4}
+            fontWeight={500}
+          >
+            My Experience
+          </Text>
+          <Text
+            fontSize={[25, 25, 32]}
+            color="#BBB0FF"
+            marginLeft={[1, 2, 2]}
+            letterSpacing={4}
+            marginBottom={25}
+            fontWeight={500}
+          >
+            (so far...)
+          </Text>
+        </Slide>
 
         <Box maxWidth={["95%", "100%", "100%"]} marginLeft={[1, 2, 2]}>
           <Fade bottom>
@@ -59,8 +61,13 @@ export default function Experience() {
           </Fade>
         </Box>
 
-        <TextBeerExp />
-        <BrewensteinExp />
+        <Fade bottom>
+          <TextBeerExp />
+        </Fade>
+
+        <Fade bottom>
+          <BrewensteinExp />
+        </Fade>
       </Box>
     </>
   );

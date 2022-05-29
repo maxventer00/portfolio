@@ -1,6 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 import { useEffect } from "react";
-import { Slide } from "react-reveal";
+import { Slide, Fade } from "react-reveal";
 import Navbar from "../Components/Navbar/Navbar";
 import Profile from "../Components/Profile";
 
@@ -19,23 +19,25 @@ export default function About() {
         backgroundColor="white"
         paddingBottom={1}
       >
-        <Text
-          fontSize={[25, 25, 32]}
-          color="#BBB0FF"
-          marginLeft={[1, 2, 2]}
-          letterSpacing={4}
-          marginBottom={25}
-          fontWeight={500}
-        >
-          More about me!
-        </Text>
+        <Slide left>
+          <Text
+            fontSize={[25, 25, 32]}
+            color="#BBB0FF"
+            marginLeft={[1, 2, 2]}
+            letterSpacing={4}
+            marginBottom={25}
+            fontWeight={500}
+          >
+            More about me!
+          </Text>
+        </Slide>
 
         <Box
           width={[450, 650, 850]}
           marginLeft={[1, 2, 2]}
           maxWidth={["90%", "100%", "100%"]}
         >
-          <Slide left>
+          <Fade bottom>
             <Text
               color="#120e2b"
               letterSpacing={1}
@@ -48,9 +50,9 @@ export default function About() {
               in high school engineering, I've always loved tackling a good
               challenge and solving problems.
             </Text>
-          </Slide>
+          </Fade>
 
-          <Slide left>
+          <Fade bottom>
             <Text
               color="#120e2b"
               letterSpacing={1}
@@ -63,9 +65,9 @@ export default function About() {
               smart solution to something that I've been fighting at is the best
               part of my week.
             </Text>
-          </Slide>
+          </Fade>
 
-          <Slide left>
+          <Fade bottom>
             <Text
               color="#120e2b"
               letterSpacing={1}
@@ -77,7 +79,7 @@ export default function About() {
               in my free time working on cars with my mates, drinking craft beer
               or having a quiet weekend at home producing music.
             </Text>
-          </Slide>
+          </Fade>
         </Box>
       </Box>
     </>

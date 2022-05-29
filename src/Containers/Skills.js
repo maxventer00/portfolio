@@ -10,7 +10,7 @@ import {
   ListItem,
 } from "@chakra-ui/react";
 import { useEffect } from "react";
-import { Fade } from "react-reveal";
+import { Fade, Slide } from "react-reveal";
 import Navbar from "../Components/Navbar/Navbar";
 import Profile from "../Components/Profile";
 import react from "../Images/react.png";
@@ -37,16 +37,18 @@ export default function Skills() {
         backgroundColor="white"
         paddingBottom={1}
       >
-        <Text
-          fontSize={[25, 25, 32]}
-          color="#BBB0FF"
-          marginLeft={[1, 2, 2]}
-          letterSpacing={4}
-          marginBottom={25}
-          fontWeight={500}
-        >
-          My Skills
-        </Text>
+        <Slide left>
+          <Text
+            fontSize={[25, 25, 32]}
+            color="#BBB0FF"
+            marginLeft={[1, 2, 2]}
+            letterSpacing={4}
+            marginBottom={25}
+            fontWeight={500}
+          >
+            My Skills
+          </Text>
+        </Slide>
 
         <Show above="lg">
           <Grid
