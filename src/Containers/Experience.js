@@ -40,7 +40,7 @@ export default function Experience() {
             marginBottom={25}
             fontWeight={500}
           >
-            (so far...)
+            (So far...)
           </Text>
         </Slide>
 
