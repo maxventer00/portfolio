@@ -84,7 +84,7 @@ export default function Skills() {
         </Show>
 
         <UnorderedList
-          marginLeft={[6, 2, 2]}
+          marginLeft={[6, 7, 7]}
           maxWidth={["95%", "100%", "100%"]}
         >
           <Fade bottom>
