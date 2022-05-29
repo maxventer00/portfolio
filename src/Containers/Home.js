@@ -1,18 +1,22 @@
-import { Box } from "@chakra-ui/react";
 import Navbar from "../Components/Navbar/Navbar";
 import Profile from "../Components/Profile";
-import About from "../Components/About";
-import Skills from "../Components/Skills";
-import Experience from "../Components/Experience";
+import AboutPreview from "../Components/Previews/AboutPreview";
+import SkillsPreview from "../Components/Previews/SkillsPreview";
+import ExperiencePreview from "../Components/Previews/ExperiencePreview";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Navbar />
       <Profile />
-      <About />
-      <Skills />
-      <Experience />
+      <AboutPreview />
+      <SkillsPreview />
+      <ExperiencePreview />
     </>
   );
 }

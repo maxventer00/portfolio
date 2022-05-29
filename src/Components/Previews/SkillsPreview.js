@@ -1,13 +1,15 @@
 import { Text, Box, Image, GridItem, Grid, Show } from "@chakra-ui/react";
-import react from "../Images/react.png";
-import js from "../Images/js.png";
-import ts from "../Images/ts.png";
-import aws from "../Images/aws.png";
-import node from "../Images/node.png";
+import react from "../../Images/react.png";
+import js from "../../Images/js.png";
+import ts from "../../Images/ts.png";
+import aws from "../../Images/aws.png";
+import node from "../../Images/node.png";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import Slide from "react-reveal/Slide";
+import { useNavigate } from "react-router-dom";
 
 export default function Skills() {
+  const navigate = useNavigate();
+
   return (
     <>
       <Box
@@ -68,6 +70,8 @@ export default function Skills() {
         </Show>
 
         <Box
+          cursor="pointer"
+          onClick={() => navigate("/skills")}
           textAlign="center"
           paddingTop={30}
           maxH={1}

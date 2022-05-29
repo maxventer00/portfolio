@@ -1,8 +1,11 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, Link } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Slide } from "react-reveal";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
+  const navigate = useNavigate();
+
   return (
     <Box
       padding={[25, 35, 45]}
@@ -24,12 +27,15 @@ export default function About() {
       </Slide>
 
       <Box
+        cursor="pointer"
+        onClick={() => navigate("/about")}
         textAlign="center"
         paddingTop={30}
         maxH={1}
         float={["center", "center", "right"]}
       >
         <Text
+          href="/about"
           color="#120e2b"
           fontWeight="655"
           display="inline"

@@ -1,11 +1,20 @@
 import { Box, Text } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import LightSpeed from "react-reveal/LightSpeed";
+import { useNavigate } from "react-router-dom";
 
 export default function Experience() {
+  const navigate = useNavigate();
+
   return (
     <>
-      <Box padding={35} backgroundColor="#120e2b" height="155">
+      <Box
+        padding={35}
+        backgroundColor="#120e2b"
+        height="155"
+        cursor="pointer"
+        onClick={() => navigate("/experience")}
+      >
         <LightSpeed right>
           <Box textAlign="center" paddingTop={30} maxH={1}>
             <Text

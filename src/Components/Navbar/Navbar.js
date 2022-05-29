@@ -69,7 +69,7 @@ const Navbar = () => {
                 <Text
                   fontSize={18}
                   fontWeight="600"
-                  color={location.pathname === "/home" ? "#BBB0FF" : "white"}
+                  color={location.pathname === "/about" ? "#BBB0FF" : "white"}
                 >
                   About
                 </Text>
@@ -79,7 +79,7 @@ const Navbar = () => {
                 <Text
                   fontSize={18}
                   fontWeight="600"
-                  color={location.pathname === "/home" ? "#BBB0FF" : "white"}
+                  color={location.pathname === "/skills" ? "#BBB0FF" : "white"}
                 >
                   Skills
                 </Text>
@@ -89,7 +89,9 @@ const Navbar = () => {
                 <Text
                   fontSize={18}
                   fontWeight="600"
-                  color={location.pathname === "/home" ? "#BBB0FF" : "white"}
+                  color={
+                    location.pathname === "/experience" ? "#BBB0FF" : "white"
+                  }
                 >
                   Experience
                 </Text>
