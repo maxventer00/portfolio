@@ -49,7 +49,7 @@ export default function Skills() {
             marginBottom={25}
             fontWeight={500}
           >
-            Why I'm your guy!
+            Why I'm your guy?
           </Text>
         </Slide>
 
