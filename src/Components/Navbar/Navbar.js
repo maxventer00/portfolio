@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Box, Text, Link, HStack, Show } from "@chakra-ui/react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import MobileDrawer from "./NavbarDrawer";
 
 const Navbar = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [scrollDirection, setScrollDirection] = useState("up");
   const location = useLocation();
+  const navigate = useNavigate();
 
   const scrollCheck = () => {
     var initial = 0;
@@ -55,47 +56,47 @@ const Navbar = () => {
               gap={9}
               marginTop="15px"
             >
-              <Link href="/" textDecoration="none">
-                <Text
-                  fontSize={18}
-                  fontWeight="600"
-                  color={location.pathname === "/" ? "#BBB0FF" : "white"}
-                >
-                  Home
-                </Text>
-              </Link>
+              <Text
+                cursor="pointer"
+                onClick={() => navigate("/")}
+                fontSize={18}
+                fontWeight="600"
+                color={location.pathname === "/" ? "#BBB0FF" : "white"}
+              >
+                Home
+              </Text>
 
-              <Link href="/about" textDecoration="none">
-                <Text
-                  fontSize={18}
-                  fontWeight="600"
-                  color={location.pathname === "/about" ? "#BBB0FF" : "white"}
-                >
-                  About
-                </Text>
-              </Link>
+              <Text
+                cursor="pointer"
+                onClick={() => navigate("/about")}
+                fontSize={18}
+                fontWeight="600"
+                color={location.pathname === "/about" ? "#BBB0FF" : "white"}
+              >
+                About
+              </Text>
 
-              <Link href="/skills" textDecoration="none">
-                <Text
-                  fontSize={18}
-                  fontWeight="600"
-                  color={location.pathname === "/skills" ? "#BBB0FF" : "white"}
-                >
-                  Skills
-                </Text>
-              </Link>
+              <Text
+                cursor="pointer"
+                onClick={() => navigate("/skills")}
+                fontSize={18}
+                fontWeight="600"
+                color={location.pathname === "/skills" ? "#BBB0FF" : "white"}
+              >
+                Skills
+              </Text>
 
-              <Link href="/experience" textDecoration="none">
-                <Text
-                  fontSize={18}
-                  fontWeight="600"
-                  color={
-                    location.pathname === "/experience" ? "#BBB0FF" : "white"
-                  }
-                >
-                  Experience
-                </Text>
-              </Link>
+              <Text
+                cursor="pointer"
+                onClick={() => navigate("/experience")}
+                fontSize={18}
+                fontWeight="600"
+                color={
+                  location.pathname === "/experience" ? "#BBB0FF" : "white"
+                }
+              >
+                Experience
+              </Text>
             </HStack>
           </Show>
 
