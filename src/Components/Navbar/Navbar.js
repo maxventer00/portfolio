@@ -48,6 +48,8 @@ const Navbar = () => {
               spacing="35"
               float="right"
               marginRight="35px"
+              gap={9}
+              marginTop="15px"
             >
               <Link href="/" textDecoration="none">
                 <Text

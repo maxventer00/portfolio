@@ -8,12 +8,6 @@ export default function Profile() {
   return (
     <>
       <Box padding={[25, 35, 45]} paddingTop={35} paddingBottom={35}>
-        {/* <div className="videoPlayer">
-          <video loop autoPlay muted>
-            <source src={CodingVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div> */}
         <Box boxSize={[140, 190, 225]} marginTop={65}>
           <Image src={ProfilePic} borderRadius="full" />
         </Box>

@@ -33,16 +33,12 @@ export default function DrawerExample({
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent alignItems="center" backgroundColor="#120e2b">
-          <Text
-            color="white"
-            marginBottom="30px"
-            marginTop="30px"
-            fontSize="40px"
-            textAlign="center"
-          >
-            Max Venter
-          </Text>
+        <DrawerContent
+          alignItems="center"
+          backgroundColor="rgb(18, 14, 43, .7)"
+          backdropFilter="blur(8px)"
+          paddingTop="90px"
+        >
           <DrawerCloseButton
             alignSelf="end"
             mx={p}
@@ -50,6 +46,7 @@ export default function DrawerExample({
             marginTop="15px"
             marginBottom="25px"
             onClick={() => setDrawerOpen(false)}
+            color="white"
           />
           <DrawerBody>{children}</DrawerBody>
           <DrawerFooter>{footer}</DrawerFooter>

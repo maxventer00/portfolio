@@ -43,7 +43,7 @@ export default function MobileDrawer({ setDrawerOpen }) {
         finalFocusRef={btnRef}
         setDrawerOpen={setDrawerOpen}
       >
-        <VStack alignItems="left">
+        <VStack alignItems="left" gap={8}>
           <Link href="/" textDecoration="none">
             <Text
               marginBottom={3}
