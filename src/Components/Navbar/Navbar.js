@@ -20,6 +20,10 @@ const Navbar = () => {
         setScrollDirection("up");
       }
 
+      if (newValue < 0) {
+        setScrollDirection("up");
+      }
+
       initial = newValue;
     });
   };
