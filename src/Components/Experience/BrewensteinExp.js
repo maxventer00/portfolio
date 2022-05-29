@@ -87,9 +87,9 @@ export default function TextBeerExp() {
             fontSize={[14, 18, 18]}
           >
             After the lead developer on the project was let go, I offered to
-            step up into the role of lead development in the intermediary time
-            period with the help of another intern developer that also joined
-            the project.
+            step up into the role of lead front-end development in the
+            intermediary time period with the help of another intern developer
+            that also joined the project.
           </ListItem>
           <ListItem
             color="#120e2b"

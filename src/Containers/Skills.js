@@ -140,7 +140,7 @@ export default function Skills() {
               marginBottom={45}
             >
               Good level of experience with SQL, MongoDB, Java, and Firebase
-              through university projects as well as some PHP, C# and C+.
+              through university projects as well as a bit of PHP, C# and C+.
             </ListItem>
           </Fade>
 
