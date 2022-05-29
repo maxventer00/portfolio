@@ -1,10 +1,9 @@
-import { Box, Text, UnorderedList, ListItem } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import { Fade, Slide } from "react-reveal";
 import TextBeerExp from "../Components/Experience/TextBeerExp";
 import BrewensteinExp from "../Components/Experience/BrewensteinExp";
-import Navbar from "../Components/Navbar/Navbar";
-import Profile from "../Components/Profile";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function Experience() {
   useEffect(() => {
@@ -12,9 +11,11 @@ export default function Experience() {
   }, []);
 
   return (
-    <>
-      <Navbar />
-      <Profile />
+    <motion.div
+      initial={{ width: 0, opacity: 0 }}
+      animate={{ width: "100%", opacity: 1 }}
+      exit={{ x: window.innerWidth, opacity: 0 }}
+    >
       <Box
         padding={[25, 35, 45]}
         paddingLeft={[25, 38, 55]}
@@ -69,6 +70,6 @@ export default function Experience() {
           <BrewensteinExp />
         </Fade>
       </Box>
-    </>
+    </motion.div>
   );
 }

@@ -1,8 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { Slide, Fade } from "react-reveal";
-import Navbar from "../Components/Navbar/Navbar";
-import Profile from "../Components/Profile";
+import { motion } from "framer-motion";
 
 export default function About() {
   useEffect(() => {
@@ -10,9 +9,11 @@ export default function About() {
   }, []);
 
   return (
-    <>
-      <Navbar />
-      <Profile />
+    <motion.div
+      initial={{ width: 0, opacity: 0 }}
+      animate={{ width: "100%", opacity: 1 }}
+      exit={{ x: window.innerWidth, opacity: 0 }}
+    >
       <Box
         padding={[25, 35, 45]}
         paddingLeft={[25, 38, 55]}
@@ -82,6 +83,6 @@ export default function About() {
           </Fade>
         </Box>
       </Box>
-    </>
+    </motion.div>
   );
 }

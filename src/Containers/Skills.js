@@ -21,6 +21,7 @@ import node from "../Images/node.png";
 import mongodb from "../Images/mongodb.png";
 import firebase from "../Images/firebase.webp";
 import sql from "../Images/sql.jpeg";
+import { motion } from "framer-motion";
 
 export default function Skills() {
   useEffect(() => {
@@ -28,9 +29,11 @@ export default function Skills() {
   }, []);
 
   return (
-    <>
-      <Navbar />
-      <Profile />
+    <motion.div
+      initial={{ width: 0, opacity: 0 }}
+      animate={{ width: "100%", opacity: 1 }}
+      exit={{ x: window.innerWidth, opacity: 0 }}
+    >
       <Box
         padding={[25, 35, 45]}
         paddingLeft={[25, 38, 55]}
@@ -46,7 +49,7 @@ export default function Skills() {
             marginBottom={25}
             fontWeight={500}
           >
-            My Skills
+            Why I'm your guy
           </Text>
         </Slide>
 
@@ -158,6 +161,6 @@ export default function Skills() {
           </Fade>
         </UnorderedList>
       </Box>
-    </>
+    </motion.div>
   );
 }

@@ -1,9 +1,8 @@
-import Navbar from "../Components/Navbar/Navbar";
-import Profile from "../Components/Profile";
 import AboutPreview from "../Components/Previews/AboutPreview";
 import SkillsPreview from "../Components/Previews/SkillsPreview";
 import ExperiencePreview from "../Components/Previews/ExperiencePreview";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   useEffect(() => {
@@ -11,12 +10,14 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <Navbar />
-      <Profile />
+    <motion.div
+      initial={{ width: 0, opacity: 0 }}
+      animate={{ width: "100%", opacity: 1 }}
+      exit={{ x: window.innerWidth, opacity: 0 }}
+    >
       <AboutPreview />
       <SkillsPreview />
       <ExperiencePreview />
-    </>
+    </motion.div>
   );
 }
