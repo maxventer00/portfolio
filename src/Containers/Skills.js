@@ -32,7 +32,7 @@ export default function Skills() {
     <motion.div
       initial={{ width: 0, opacity: 0 }}
       animate={{ width: "100%", opacity: 1 }}
-      exit={{ x: window.innerWidth, opacity: 0 }}
+      exit={{ x: window.innerWidth, opacity: 0, transition: { duration: 0.2 } }}
     >
       <Box
         padding={[25, 35, 45]}
@@ -49,7 +49,7 @@ export default function Skills() {
             marginBottom={25}
             fontWeight={500}
           >
-            Why I'm your guy
+            Why I'm your guy!
           </Text>
         </Slide>
 

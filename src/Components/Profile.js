@@ -2,7 +2,6 @@ import "../App.css";
 import ProfilePic from "../Images/profile.jpeg";
 import { Box, Image, Text } from "@chakra-ui/react";
 import Fade from "react-reveal/Fade";
-import CodingVideo from "../Images/CodingVideo.mov";
 import { useNavigate } from "react-router-dom";
 
 export default function Profile() {

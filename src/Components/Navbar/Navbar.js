@@ -41,7 +41,7 @@ const Navbar = () => {
           p={4}
           paddingRight={2}
           color="white"
-          backgroundImage="linear-gradient(to bottom, rgba(15,15,15,1), #120e2b);"
+          backgroundImage="linear-gradient(to bottom, rgba(15,15,15,.5), rgba(18, 14, 43, .2));"
           position="fixed"
           zIndex={isDrawerOpen ? 0 : 1}
         >
