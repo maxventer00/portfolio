@@ -13,7 +13,7 @@ export default function Profile() {
         <Box
           boxSize={[140, 190, 225]}
           marginTop={65}
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/home")}
           cursor="pointer"
         >
           <Image src={ProfilePic} borderRadius="full" />
@@ -25,7 +25,7 @@ export default function Profile() {
             color="white"
             paddingTop={2}
             marginLeft={[1, 2, 4]}
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
             cursor="pointer"
           >
             Max Venter
@@ -35,7 +35,7 @@ export default function Profile() {
             color="#BBB0FF"
             marginLeft={[1, 2, 4]}
             letterSpacing={4}
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
             cursor="pointer"
           >
             Software Engineer
