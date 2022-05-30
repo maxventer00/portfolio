@@ -46,10 +46,10 @@ export default function About() {
               fontSize={[14, 18, 18]}
               marginBottom={45}
             >
-              From spending months as a kid trying to get minecraft to run on my
-              junkyard ubuntu linux PC, to building janky pitbikes and gokarts
-              in high school engineering, I've always loved tackling a good
-              challenge and solving problems.
+              From spending months as a kid trying to get Minecraft to run on my
+              junkyard Ubuntu Linux PC, to building sketchy pitbikes and
+              go-karts in high school engineering, I've always loved tackling a
+              good challenge and solving problems.
             </Text>
           </Fade>
 
@@ -77,8 +77,8 @@ export default function About() {
               marginBottom={45}
             >
               Outside of my budding Software Engineering career, you'll find me
-              in my free time working on cars with my mates, drinking craft beer
-              or having a quiet weekend at home producing music.
+              in my free time working on cars with my mates, going to the gym or
+              having a quiet weekend at home producing music.
             </Text>
           </Fade>
         </Box>

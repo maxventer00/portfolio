@@ -42,7 +42,7 @@ export default function TextBeerExp() {
           marginBottom={45}
         >
           Development of a web app, designed to guide users into the world of
-          crafte beer home brewing. Complex user flows, cart management, in-app
+          craft beer home brewing. Complex user flows, cart management, in-app
           guided tutorials and smooth fluid designs. Strict Agile/SCRUM
           development using JIRA.
         </Text>
