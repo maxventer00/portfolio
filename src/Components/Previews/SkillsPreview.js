@@ -6,6 +6,7 @@ import aws from "../../Images/aws.png";
 import node from "../../Images/node.svg";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Skills() {
   const navigate = useNavigate();
@@ -28,7 +29,11 @@ export default function Skills() {
             marginRight="auto"
             justifyContent="center"
           >
-            <GridItem>
+            <motion.GridItem
+              cursor="pointer"
+              whileHover={{ scale: 1.004 }}
+              whileTap={{ scale: 1 }}
+            >
               <a
                 href={"https://reactjs.org/"}
                 target="_blank"
@@ -36,8 +41,11 @@ export default function Skills() {
               >
                 <Image src={react} h={125} />
               </a>
-            </GridItem>
-            <GridItem>
+            </motion.GridItem>
+            <motion.GridItem
+              whileHover={{ scale: 1.004 }}
+              whileTap={{ scale: 1 }}
+            >
               <a
                 href={"https://www.javascript.com/"}
                 target="_blank"
@@ -45,8 +53,11 @@ export default function Skills() {
               >
                 <Image src={js} h={125} />
               </a>
-            </GridItem>
-            <GridItem>
+            </motion.GridItem>
+            <motion.GridItem
+              whileHover={{ scale: 1.004 }}
+              whileTap={{ scale: 1 }}
+            >
               <a
                 href={"https://www.typescriptlang.org/"}
                 target="_blank"
@@ -54,8 +65,11 @@ export default function Skills() {
               >
                 <Image src={ts} h={125} />
               </a>
-            </GridItem>
-            <GridItem>
+            </motion.GridItem>
+            <motion.GridItem
+              whileHover={{ scale: 1.004 }}
+              whileTap={{ scale: 1 }}
+            >
               <a
                 href={"https://aws.amazon.com/"}
                 target="_blank"
@@ -63,8 +77,11 @@ export default function Skills() {
               >
                 <Image src={aws} h={125} />
               </a>
-            </GridItem>
-            <GridItem>
+            </motion.GridItem>
+            <motion.GridItem
+              whileHover={{ scale: 1.004 }}
+              whileTap={{ scale: 1 }}
+            >
               <a
                 href={"https://nodejs.org/en/"}
                 target="_blank"
@@ -72,7 +89,7 @@ export default function Skills() {
               >
                 <Image src={node} h={125} />
               </a>
-            </GridItem>
+            </motion.GridItem>
           </Grid>
         </Show>
 
