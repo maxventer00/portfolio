@@ -58,10 +58,10 @@ const Navbar = () => {
             >
               <Text
                 cursor="pointer"
-                onClick={() => navigate("/home")}
+                onClick={() => navigate("/")}
                 fontSize={18}
                 fontWeight="600"
-                color={location.pathname === "/home" ? "#BBB0FF" : "white"}
+                color={location.pathname === "/" ? "#BBB0FF" : "white"}
               >
                 Home
               </Text>

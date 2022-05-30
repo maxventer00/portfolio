@@ -10,7 +10,7 @@ export default function AppRoutes() {
   return (
     <AnimatePresence>
       <Routes location={location} key={location.key}>
-        <Route exact path="/home" element={<Home />} />
+        <Route exact path="" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/skills" element={<Skills />} />
         <Route exact path="/experience" element={<Experience />} />

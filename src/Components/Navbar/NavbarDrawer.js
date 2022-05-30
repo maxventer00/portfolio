@@ -45,12 +45,12 @@ export default function MobileDrawer({ setDrawerOpen }) {
         <VStack alignItems="left" gap={8}>
           <Text
             cursor="pointer"
-            onClick={() => navigate("/home")}
+            onClick={() => navigate("/")}
             marginBottom={3}
             textAlign="center"
             fontSize={18}
             fontWeight="600"
-            color={location.pathname === "/home" ? "#BBB0FF" : "white"}
+            color={location.pathname === "/" ? "#BBB0FF" : "white"}
           >
             Home
           </Text>
