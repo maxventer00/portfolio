@@ -34,9 +34,9 @@ export default function About() {
         </Slide>
 
         <Box
-          width={[450, 650, 850]}
           marginLeft={[1, 2, 2]}
-          maxWidth={["90%", "100%", "100%"]}
+          maxWidth={["80%", "70%", "70%"]}
+          paddingBottom="100px"
         >
           <Fade bottom>
             <Text

@@ -1,9 +1,9 @@
 import { Text, Box, Image, GridItem, Grid, Show } from "@chakra-ui/react";
-import react from "../../Images/react.png";
-import js from "../../Images/js.png";
-import ts from "../../Images/ts.png";
+import react from "../../Images/react.svg";
+import js from "../../Images/js.svg";
+import ts from "../../Images/ts.svg";
 import aws from "../../Images/aws.png";
-import node from "../../Images/node.png";
+import node from "../../Images/node.svg";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 
