@@ -65,19 +65,67 @@ export default function Skills() {
           >
             <GridItem>
               <VStack float="right">
-                <Image src={react} h={125} paddingBottom={45} />
-                <Image src={js} h={125} paddingBottom={45} />
-                <Image src={ts} h={125} paddingBottom={45} />
-                <Image src={node} h={125} paddingBottom={45} />
+                <a
+                  href={"https://reactjs.org/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={react} h={125} paddingBottom={45} />
+                </a>
+                <a
+                  href={"https://www.javascript.com/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={js} h={125} paddingBottom={45} />
+                </a>
+                <a
+                  href={"https://www.typescriptlang.org/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={ts} h={125} paddingBottom={45} />
+                </a>
+                <a
+                  href={"https://nodejs.org/en/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={node} h={125} paddingBottom={45} />
+                </a>
               </VStack>
             </GridItem>
 
             <GridItem>
               <VStack float="left" marginRight={85}>
-                <Image src={aws} h={125} paddingBottom={45} />
-                <Image src={mongodb} h={125} paddingBottom={45} />
-                <Image src={firebase} h={125} paddingBottom={45} />
-                <Image src={sql} h={125} paddingBottom={45} />
+                <a
+                  href={"https://aws.amazon.com/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={aws} h={125} paddingBottom={45} />
+                </a>
+                <a
+                  href={"https://www.mongodb.com/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={mongodb} h={125} paddingBottom={45} />
+                </a>
+                <a
+                  href={"https://firebase.google.com/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={firebase} h={125} paddingBottom={45} />
+                </a>
+                <a
+                  href={"https://en.wikipedia.org/wiki/SQL"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={sql} h={125} paddingBottom={45} />
+                </a>
               </VStack>
             </GridItem>
           </Grid>

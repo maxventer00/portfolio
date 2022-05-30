@@ -29,19 +29,49 @@ export default function Skills() {
             justifyContent="center"
           >
             <GridItem>
-              <Image src={react} h={125} />
+              <a
+                href={"https://reactjs.org/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={react} h={125} />
+              </a>
             </GridItem>
             <GridItem>
-              <Image src={js} h={125} />
+              <a
+                href={"https://www.javascript.com/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={js} h={125} />
+              </a>
             </GridItem>
             <GridItem>
-              <Image src={ts} h={125} />
+              <a
+                href={"https://www.typescriptlang.org/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={ts} h={125} />
+              </a>
             </GridItem>
             <GridItem>
-              <Image src={aws} h={125} />
+              <a
+                href={"https://aws.amazon.com/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={aws} h={125} />
+              </a>
             </GridItem>
             <GridItem>
-              <Image src={node} h={125} />
+              <a
+                href={"https://nodejs.org/en/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={node} h={125} />
+              </a>
             </GridItem>
           </Grid>
         </Show>
@@ -49,22 +79,52 @@ export default function Skills() {
         <Show below="md">
           <Grid templateColumns="repeat(3, 1fr)" gap={3} marginTop={75}>
             <GridItem>
-              <Image src={react} h={85} />
+              <a
+                href={"https://reactjs.org/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={react} h={85} />
+              </a>
             </GridItem>
             <GridItem>
-              <Image src={js} h={85} />
+              <a
+                href={"https://www.javascript.com/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={js} h={85} />
+              </a>
             </GridItem>
             <GridItem>
-              <Image src={ts} h={85} />
+              <a
+                href={"https://www.typescriptlang.org/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={ts} h={85} />
+              </a>
             </GridItem>
           </Grid>
 
           <Grid templateColumns="repeat(2, 1fr)" gap={3} padding={25}>
             <GridItem>
-              <Image src={aws} h={85} />
+              <a
+                href={"https://aws.amazon.com/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={aws} h={85} />
+              </a>
             </GridItem>
             <GridItem>
-              <Image src={node} h={85} />
+              <a
+                href={"https://nodejs.org/en/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={node} h={85} />
+              </a>
             </GridItem>
           </Grid>
         </Show>
