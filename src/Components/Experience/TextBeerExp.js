@@ -108,8 +108,8 @@ export default function TextBeerExp() {
           >
             Iterated upon previous code to have more specific user friendly
             replies based on their messages, as well as helping with parsing and
-            prioritizing correct spelt text messages over incorrectly spelt to
-            account for typos.
+            prioritizing correct spelled text messages over incorrectly spelled
+            to account for typos.
           </ListItem>
           <ListItem
             color="#120e2b"

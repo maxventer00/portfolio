@@ -32,7 +32,7 @@ export default function Skills() {
             <motion.GridItem
               cursor="pointer"
               whileHover={{ scale: 1.004 }}
-              whileTap={{ scale: 1 }}
+              whileTap={{ scale: 1.002 }}
             >
               <a
                 href={"https://reactjs.org/"}
@@ -43,8 +43,9 @@ export default function Skills() {
               </a>
             </motion.GridItem>
             <motion.GridItem
+              cursor="pointer"
               whileHover={{ scale: 1.004 }}
-              whileTap={{ scale: 1 }}
+              whileTap={{ scale: 1.002 }}
             >
               <a
                 href={"https://www.javascript.com/"}
@@ -55,8 +56,9 @@ export default function Skills() {
               </a>
             </motion.GridItem>
             <motion.GridItem
+              cursor="pointer"
               whileHover={{ scale: 1.004 }}
-              whileTap={{ scale: 1 }}
+              whileTap={{ scale: 1.002 }}
             >
               <a
                 href={"https://www.typescriptlang.org/"}
@@ -67,8 +69,9 @@ export default function Skills() {
               </a>
             </motion.GridItem>
             <motion.GridItem
+              cursor="pointer"
               whileHover={{ scale: 1.004 }}
-              whileTap={{ scale: 1 }}
+              whileTap={{ scale: 1.002 }}
             >
               <a
                 href={"https://aws.amazon.com/"}
@@ -79,8 +82,9 @@ export default function Skills() {
               </a>
             </motion.GridItem>
             <motion.GridItem
+              cursor="pointer"
               whileHover={{ scale: 1.004 }}
-              whileTap={{ scale: 1 }}
+              whileTap={{ scale: 1.002 }}
             >
               <a
                 href={"https://nodejs.org/en/"}

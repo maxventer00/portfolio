@@ -33,6 +33,7 @@ export default function Skills() {
       initial={{ width: 0, opacity: 0 }}
       animate={{ width: "100%", opacity: 1 }}
       exit={{ x: window.innerWidth, opacity: 0, transition: { duration: 0.2 } }}
+      paddingBottom={150}
     >
       <Box
         padding={[25, 35, 45]}
