@@ -21,7 +21,7 @@ export default function About() {
           fontSize={[18, 22, 24]}
         >
           With a love of problem-solving and thinking outside the box, the
-          oppotunity to work in an industry where I have the ability to always
+          opportunity to work in an industry where I have the ability to always
           be learning alongside people smarter than me is where I thrive.
         </Text>
       </Slide>
