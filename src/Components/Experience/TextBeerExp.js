@@ -18,7 +18,7 @@ export default function TextBeerExp() {
           fontSize={[25, 25, 32]}
           isExternal
         >
-          Beerjerk - TextBeer <ArrowBackIcon w={6} h={6} />{" "}
+          Beer Jerk - TextBeer <ArrowBackIcon w={6} h={6} />{" "}
         </Link>
 
         <Text
